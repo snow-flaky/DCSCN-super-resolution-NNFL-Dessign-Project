@@ -46,11 +46,14 @@ Our keras.py file creates the model using keras with structure as mentioned in t
 ## Instructions to Run
 
 ## Data Augmentation
-Data Augmentation is achieved using 3 techniques of flipping, rotating and zooming an image. Below is a sample example of output after augmentation on an input image.
-
-<img src = "">
+Execute the following command on dataset of your own choice. Three data augmentation techniques have been implemented in data_aug_keras.py. The augemented dataset can be found in **data/new_augmented_dataset** folder.
 
 
+```
+# generated augmented dataset
+python data-aug-keras.py --dir='path of dataset-of-your-own-choice'
+
+```
 
 ## How to train
 
@@ -79,18 +82,24 @@ The following command is to be run.
 ```
 python sr.py --file your_file.png --dataset yang_bsd_4 --filters_decay_gamma 1.5 
 ```
-
 ## Results
 
+### **Data Augmentation** 
+
+Data Augmentation is achieved using 3 techniques of flipping, rotating and zooming an image. Below is a sample example of output after augmentation on an input image.
+<img src = "">
+
+## PSNR and SSIM Results
+
+The result obtained on running the model on DIV2K are:
+**Average [Div2K] PSNR : 30.859353**
+**Average [DIV2K] SSIM : 0.912433** 
 
 
+## Sample Test Image
 
-## Visualization
+The figure below shows the output obtained when run on a sample test image. As can be seen there has been significant improvement in the resolution and the result is comparable to the ground truth data. 
 
-During the training, tensorboard log is available. You can use "--save_weights True" to add histogram and stddev logging of each weights. Those are logged under **tf_log** directory.
+<img src = "">
 
-<img src="https://raw.githubusercontent.com/jiny2001/dcscn-super-resolution/master/documents/model.png" width="400">
 
-Also we log average PSNR of traing and testing, and then generate csv and plot files under **graphs** directory. Please note training PSNR contains dropout factor so it will be less than test PSNR. This graph is from training our compact version of DCSCN.
-
-<img src="https://raw.githubusercontent.com/jiny2001/dcscn-super-resolution/master/documents/graph.png" width="400">
