@@ -87,7 +87,7 @@ python sr.py --file your_file.png --dataset yang_bsd_4 --filters_decay_gamma 1.5
 ### **Data Augmentation** 
 
 Data Augmentation is achieved using 3 techniques of flipping, rotating and zooming an image. Below is a sample example of output after augmentation on an input image.
-<img src = "">
+<img src = "https://github.com/snow-flaky/NNFL/blob/master/Images/aug.png">
 
 ## PSNR and SSIM Results
 
