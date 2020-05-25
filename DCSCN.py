@@ -593,9 +593,8 @@ class SuperResolution:
         if len(org_image.shape) >= 3 and org_image.shape[2] == 3 and self.channels == 1:
             input_y_image = util.convert_rgb_to_y(org_image, jpeg_mode=self.jpeg_mode)
             scaled_image = util.resize_image_by_pil(input_y_image, self.scale)
-            util.save_image(output_folder + filename + "_bicubic_y" + extension, scaled_image)
             output_y_image = self.do(input_y_image)
-            util.save_image(output_folder + filename + "_result_y" + extension, output_y_image)
+            
 
             scaled_ycbcr_image = util.convert_rgb_to_ycbcr(util.resize_image_by_pil(org_image, self.scale),
                                                            jpeg_mode=self.jpeg_mode)
@@ -603,7 +602,6 @@ class SuperResolution:
                                                    jpeg_mode=self.jpeg_mode)
         else:
             scaled_image = util.resize_image_by_pil(org_image, self.scale)
-            util.save_image(output_folder + filename + "_bicubic_y" + extension, scaled_image)
             image = self.do(org_image)
 
         util.save_image(output_folder + filename + "_result" + extension, image)
