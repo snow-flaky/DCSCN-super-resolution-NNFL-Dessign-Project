@@ -92,13 +92,16 @@ Data Augmentation is achieved using 3 techniques of flipping, rotating and zoomi
 ## PSNR and SSIM Results
 
 The result obtained on running the model on DIV2K are:
+
 **Average [Div2K] PSNR : 30.859353**
+
 **Average [DIV2K] SSIM : 0.912433** 
 
 
 ## Sample Test Image
 
 The figure below shows the output obtained when run on a sample test image. As can be seen there has been significant improvement in the resolution and the result is comparable to the ground truth data. 
+
 **Original Image**
 <img src = "https://github.com/snow-flaky/NNFL/blob/master/Images/t53.png">
 
