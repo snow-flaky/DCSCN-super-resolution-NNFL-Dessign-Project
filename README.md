@@ -103,6 +103,7 @@ The result obtained on running the model on DIV2K are:
 The figure below shows the output obtained when run on a sample test image. As can be seen there has been significant improvement in the resolution and the result is comparable to the ground truth data. 
 
 **Original Image**
+
 <img src = "https://github.com/snow-flaky/NNFL/blob/master/Images/t53.png">
 
 **Resulting Image**
