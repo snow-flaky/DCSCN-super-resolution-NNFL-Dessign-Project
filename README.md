@@ -46,11 +46,11 @@ Our keras.py file creates the model using keras with structure as mentioned in t
 ## Instructions to Run
 
 ## Data Augmentation
-Execute the following command on dataset of your own choice. Three data augmentation techniques have been implemented in data_aug_keras.py. The augemented dataset can be found in **data/new_augmented_dataset** folder.
+Execute the following command on dataset of your own choice. Three data augmentation techniques have been implemented in data_augmentation_keras.py. The augemented dataset can be found in **data/new_augmented_dataset** folder.
 
 
 ```
-# generated augmented dataset
+# generate augmented dataset
 python data-augmentation-keras.py --dir='path of dataset-of-your-own-choice'
 
 ```
