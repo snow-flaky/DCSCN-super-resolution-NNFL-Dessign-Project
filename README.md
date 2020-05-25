@@ -51,7 +51,7 @@ Execute the following command on dataset of your own choice. Three data augmenta
 
 ```
 # generated augmented dataset
-python data-aug-keras.py --dir='path of dataset-of-your-own-choice'
+python data-augmentation-keras.py --dir='path of dataset-of-your-own-choice'
 
 ```
 
